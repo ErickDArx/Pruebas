@@ -21,6 +21,10 @@
         "nunomaduro/collision": "^3.0",
         "phpunit/phpunit": "^7.5"
     },
+     "post-install-cmd": [
+     "php artisan clear-compiled",
+     "chmod -R 777 public/"
+ ],
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
